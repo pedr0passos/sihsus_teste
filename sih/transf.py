@@ -2,7 +2,9 @@ import pandas as pd
 import dics 
 
 def transf(df):
-                                                                                                                                                                                                                                                                                                                                                                       
+
+    df.columns = df.columns.str.lower()
+
     if 'SEXO' in df.columns:
         df['SEXO'] = df['SEXO'].replace(dics.sexo)
 
@@ -24,8 +26,5 @@ def transf(df):
     if 'INFE_HOSP' in df.columns:
         df['INFE_HOSP'] = df['INFE_HOSP'].replace(dics.infehosp)
 
-    df.columns = df.columns.str.lower()
-    df.reset_index(inplace=True)   
-    df.rename(columns={'index':'id'}, inplace=True)
-    df.set_index('id', inplace=True)    
-    df.drop(columns=['level_0','level_1','level_2'], inplace=True) 
+def treat_na(df):
+    

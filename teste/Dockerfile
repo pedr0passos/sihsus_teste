@@ -7,4 +7,4 @@ RUN pip install --no-cache-dir --default-timeout=1000 -r ./requirements.txt
 WORKDIR /sih
 COPY . .
 
-CMD ["python", "sih/main.py"]
+CMD ["python", "./teste.py"]
