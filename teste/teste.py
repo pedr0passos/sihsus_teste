@@ -1,7 +1,9 @@
 import pandas as pd
-from pysus.online_data.SIH import download
 
-years = [2020,2021]
-path_list = download(states='es', years=years, months=1)
-df = pd.concat([pd.read_parquet(path) for path in path_list])
+aux = pd.read_csv("./bases_auxiliares/MUNIC_BR.csv", sep=';')
+colunas = ['cod', 'text']
+df = pd.DataFrame([[110034, 'text'],[539999,'text']], columns=colunas)
+aux.rename(columns={'value':'value1'}, inplace=True)
+df = pd.merge(df, aux, how='left', on=['cod'])
 print(df)
+

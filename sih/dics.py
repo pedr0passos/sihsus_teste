@@ -5,3 +5,5 @@ morte={'0':"Sem óbito", '1':"Com óbito"}
 instru={'1':"Analfabeto", '2':"1º grau", '3':"2º grau", '4':"3º grau", '0':"", '9':""}
 racacor={'01':"Branca", '02':"Preta", '03':"Parda", '04':"Amarela", '05':"Amarela", '00':"", '99':""}
 infehosp={'0':"Não", '1':"Sim"}
+dias_perm={"0000":"0 dias", "0001":"1 dia", "0002":"2 dias", "0003":"3 dias", "0004":"4 dias", "0005":"5 dias", "0006":"6 dias", "0007":"7 dias", "0014":"8-14 dias", "0021":"15-21 dias", "0028":"22-28 dias", "9999":"29 dias e +"}
+car_int={"1":"Eletivo", "2":"Urgência", "3":"Acidente no local trabalho ou a serv da empresa", "4":"Acidente no trajeto para o trabalho", "5":"Outros tipos de acidente de trânsito", "6":"Out tp lesões e envenen por agent quím físicos"}

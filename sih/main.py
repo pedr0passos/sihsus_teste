@@ -1,16 +1,21 @@
-import load as ld 
-import transf as tf 
-import extract as ext 
-from sqlalchemy import create_engine
+from etl import *
 
-meses=[1]
-estado='es'
-anos=[2021]
-dic={}
+ufs='es'
+years=[2021]
 
-ext.extract_sih(estado=estado, anos=anos, meses=meses, aux=dic)
-sih_es = ext.concat(dic)
-tf.transf(sih_es)
-conection = create_engine('postgresql+psycopg2://postgres:0807@host.docker.internal:5432/sih_es')
-ld.load(df=sih_es, conection=conection)
-print("carregou")
+sih = extract(uf=ufs, years=years)
+treat_na(sih)
+transf(sih)
+treat_municipios(sih)
+
+# conection = conect(
+#     host='host.docker.internal',
+#     passr='0807',
+#     port='5432',
+#     user='postgres'
+# )
+
+# load(df=sih, conection=conection)
+
+print(sih['munic_res','nome_munic_res'])
+
