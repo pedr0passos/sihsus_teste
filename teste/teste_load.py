@@ -6,5 +6,5 @@ def conect(host, user, passr, port, data):
     return create_engine(conn)
 
 def load_sih(df, conn):
-    df.to_sql('sih', con=conn, if_exists='append', chunksize=5000, method='multi')
+    df.to_sql('pessoa', con=conn, if_exists='append')
 

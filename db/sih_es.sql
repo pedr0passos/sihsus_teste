@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS sih
     n_aih text,
     ident text,
     cep text,
-    munic_res text,
+    munic_res integer,
     nasc text,
     sexo text,
     uti_mes_in text,
@@ -113,5 +113,5 @@ CREATE TABLE IF NOT EXISTS sih
     tpdisec6 text,
     tpdisec7 text,
     tpdisec8 text,
-    tpdisec9 text,
-)
+    tpdisec9 text
+);

@@ -1,0 +1,1 @@
+extrair sih -> criar dimensões -> criar fato

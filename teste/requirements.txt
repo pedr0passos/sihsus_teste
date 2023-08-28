@@ -1,2 +1,3 @@
 pandas
-pysus
+sqlalchemy
+psycopg2
