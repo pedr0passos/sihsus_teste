@@ -20,7 +20,7 @@ def run_categorias(con, table, sep=';', chunck=12000):
     df = read_cid_csv(file, sep)
     load_cid(df=df, con=con, table='cid10_categorias', chunck=chunck)
 
-def run_categorias(con, table, sep=';', chunck=12000):
+def run_subcategorias(con, table, sep=';', chunck=12000):
     file = "https://github.com/bigdata-icict/ETL-Dataiku-DSS/blob/master/SIM/CID-10-SUBCATEGORIAS.CSV.utf8?raw=true"
     df = read_cid_csv(file, sep)
     load_cid(df=df, con=con, table='cid10_subcategorias', chunck=chunck)

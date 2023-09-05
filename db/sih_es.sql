@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS sih
     n_aih text,
     ident text,
     cep text,
-    munic_res integer,
+    munic_res text,
     nasc text,
     sexo text,
     uti_mes_in text,

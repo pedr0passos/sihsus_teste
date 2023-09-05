@@ -25,6 +25,9 @@ def transf(df):
         df['INFE_HOSP'] = df['INFE_HOSP'].replace(dics.infehosp)
     
     df.columns = df.columns.str.lower()
+    df.reset_index(inplace=True)
+    df.rename(columns={'index':'id'},inplace=True)
+    df.set_index('id', inplace=True)
 
 def treat_na(df):
     for coluna in df.columns:

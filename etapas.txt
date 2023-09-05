@@ -1,1 +1,11 @@
 extrair sih -> criar dimensões -> criar fato
+
+extrair sih:
+    função que faz a extração 
+    função que carrega no banco 
+criar dimensões:
+    utilizar tabelas auxiliares 
+    fazer consultas sql ( aprender a fazer direito )
+criar fato:
+
+-----------------------------------------------------
