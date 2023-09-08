@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS sih
+CREATE TABLE IF NOT EXISTS stg.sih
 (
     id bigint PRIMARY KEY NOT NULL,
     uf_zi text,
